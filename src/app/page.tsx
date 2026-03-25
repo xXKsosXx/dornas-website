@@ -387,7 +387,7 @@ export default function HomePage() {
               <div className="space-y-4">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80"
+                  src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=400&q=80&auto=format&fit=crop"
                   alt="Paysage ardéchois"
                   className="w-full h-64 object-cover rounded-xl"
                 />
