@@ -12,7 +12,7 @@ const actualites = [
       "Un investissement de 300 000 € avec des subventions couvrant jusqu'à 80 % du coût. La dette résiduelle représente environ 150 € par habitant, un effort maîtrisé pour un équipement structurant.",
     date: "2026-03-20",
     image:
-      "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=600&q=80&auto=format&fit=crop",
+      "/images/barrage.png",
   },
   {
     titre: "Projet Multiservices : épicerie, bar, dépôt de pain",
@@ -21,7 +21,7 @@ const actualites = [
       "Le projet repose sur du foncier communal. Une commission participative est mise en place pour associer les habitants à la définition des services et au suivi du projet.",
     date: "2026-03-15",
     image:
-      "https://images.unsplash.com/photo-1534723452862-4c874018d66d?w=600&q=80&auto=format&fit=crop",
+      "/images/épicerie-multiservices.png",
   },
   {
     titre: "Liste Ensemble à Dornas élue — nouveau conseil municipal",
@@ -30,7 +30,7 @@ const actualites = [
       "13 élus au service de la commune, portés par un projet collectif pour Dornas. Le nouveau conseil s'est réuni pour la première fois le 15 mars 2026.",
     date: "2026-03-15",
     image:
-      "https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?w=600&q=80&auto=format&fit=crop",
+      "/images/liste-ensemble.PNG",
   },
 ];
 
@@ -76,8 +76,8 @@ export default function HomePage() {
       <section className="relative min-h-[85vh] overflow-hidden flex items-center">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=85&auto=format&fit=crop"
-          alt="Paysage de montagne ardéchois"
+          src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=1920&q=85&auto=format&fit=crop"
+          alt="Rivière ardéchoise entre falaises et forêts"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#fdf9f3] via-[#fdf9f3]/65 to-transparent" />
@@ -387,28 +387,28 @@ export default function HomePage() {
               <div className="space-y-4">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400&q=80&auto=format&fit=crop"
+                  src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80"
                   alt="Paysage ardéchois"
                   className="w-full h-64 object-cover rounded-xl"
                 />
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="https://images.unsplash.com/photo-1508193638397-1c4234db14d8?w=400&q=80&auto=format&fit=crop"
-                  alt="Forêt ardéchoise"
+                  src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&q=80"
+                  alt="Forêt verdoyante"
                   className="w-full h-80 object-cover rounded-xl -mt-4"
                 />
               </div>
               <div className="space-y-4 mt-12">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&q=80&auto=format&fit=crop"
+                  src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&q=80"
                   alt="Montagne"
                   className="w-full h-80 object-cover rounded-xl"
                 />
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&q=80&auto=format&fit=crop"
-                  alt="Nature verdoyante"
+                  src="https://images.unsplash.com/photo-1508193638397-1c4234db14d8?w=400&q=80"
+                  alt="Nature et forêt"
                   className="w-full h-64 object-cover rounded-xl"
                 />
               </div>
