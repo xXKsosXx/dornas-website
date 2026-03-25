@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 const navItems = [
@@ -24,9 +25,13 @@ export default function Header() {
             href="/"
             className="flex items-center gap-3 text-white no-underline"
           >
-            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-teal rounded-full flex items-center justify-center font-heading font-bold text-lg sm:text-xl">
-              D
-            </div>
+            <Image
+              src="/images/logo mairie.png"
+              alt="Logo Mairie de Dornas"
+              width={48}
+              height={48}
+              className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
+            />
             <div className="hidden sm:block">
               <div className="font-heading text-lg font-semibold leading-tight">
                 Mairie de Dornas
