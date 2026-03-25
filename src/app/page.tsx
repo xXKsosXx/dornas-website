@@ -6,29 +6,29 @@ const actualites = [
     titre: "Reconstruction du barrage du plan d'eau — lancement septembre 2026",
     categorie: "Travaux",
     extrait:
-      "Un investissement de 300 000 \u20ac avec des subventions couvrant jusqu'\u00e0 80 % du co\u00fbt. La dette r\u00e9siduelle repr\u00e9sente environ 150 \u20ac par habitant, un effort ma\u00eetris\u00e9 pour un \u00e9quipement structurant.",
+      "Un investissement de 300 000 € avec des subventions couvrant jusqu'à 80 % du coût. La dette résiduelle représente environ 150 € par habitant, un effort maîtrisé pour un équipement structurant.",
     date: "2026-03-20",
   },
   {
-    titre: "Projet Multiservices : \u00e9picerie, bar, d\u00e9p\u00f4t de pain",
+    titre: "Projet Multiservices : épicerie, bar, dépôt de pain",
     categorie: "Vie locale",
     extrait:
-      "Le projet repose sur du foncier communal. Une commission participative est mise en place pour associer les habitants \u00e0 la d\u00e9finition des services et au suivi du projet.",
+      "Le projet repose sur du foncier communal. Une commission participative est mise en place pour associer les habitants à la définition des services et au suivi du projet.",
     date: "2026-03-15",
   },
   {
-    titre: "Liste Ensemble \u00e0 Dornas \u00e9lue \u2014 nouveau conseil municipal",
+    titre: "Liste Ensemble à Dornas élue — nouveau conseil municipal",
     categorie: "Vie municipale",
     extrait:
-      "13 \u00e9lus au service de la commune, port\u00e9s par un projet collectif pour Dornas. Le nouveau conseil s\u2019est r\u00e9uni pour la premi\u00e8re fois le 15 mars 2026.",
+      "13 élus au service de la commune, portés par un projet collectif pour Dornas. Le nouveau conseil s'est réuni pour la première fois le 15 mars 2026.",
     date: "2026-03-15",
   },
 ];
 
 const evenementsProchains = [
   { titre: "Conseil municipal", date: "15 Avril 2026", heure: "18h30", lieu: "Salle de la Mairie" },
-  { titre: "Vide-grenier annuel", date: "08 Juin 2026", heure: "d\u00e8s 8h", lieu: "Place du Village" },
-  { titre: "Cin\u00e9ma en plein air", date: "05 Juillet 2026", heure: "21h30", lieu: "Plan d\u2019eau" },
+  { titre: "Vide-grenier annuel", date: "08 Juin 2026", heure: "dès 8h", lieu: "Place du Village" },
+  { titre: "Cinéma en plein air", date: "05 Juillet 2026", heure: "21h30", lieu: "Plan d'eau" },
 ];
 
 export default function HomePage() {
@@ -37,26 +37,25 @@ export default function HomePage() {
       {/* Hero */}
       <section className="relative h-[70vh] min-h-[500px] overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=85&auto=format&fit=crop"
-          alt="Paysage de montagne en Ard\u00e8che"
+          src="/images/Hero Dornas.PNG"
+          alt="Vue du village de Dornas en Ardèche"
           fill
           className="object-cover"
           priority
-          unoptimized
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#fdf9f3] via-[#fdf9f3]/60 to-transparent" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 h-full flex items-center">
           <div className="max-w-xl">
             <p className="text-teal font-medium text-sm uppercase tracking-wider mb-2">
-              Commune d&apos;Ard\u00e8che &mdash; 07160
+              Commune d&apos;Ardèche — 07160
             </p>
             <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-navy leading-tight mb-4">
-              Bienvenue \u00e0 Dornas
+              Bienvenue à Dornas
             </h1>
             <p className="text-navy/80 text-lg sm:text-xl mb-8 leading-relaxed">
-              200 habitants &middot; 4 hameaux &middot; 540m d&apos;altitude
+              200 habitants · 4 hameaux · 540m d&apos;altitude
               <br />
-              Un village vivant au c\u0153ur de l&apos;Ard\u00e8che
+              Un village vivant au cœur de l&apos;Ardèche
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -69,22 +68,22 @@ export default function HomePage() {
                 href="/notre-village"
                 className="inline-flex items-center px-6 py-3 border-2 border-navy text-navy rounded-lg font-medium hover:bg-navy hover:text-white transition-colors min-h-[44px] text-base"
               >
-                D\u00e9couvrir le village
+                Découvrir le village
               </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Chiffres cl\u00e9s */}
+      {/* Chiffres clés */}
       <section className="bg-navy text-white py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             {[
               { value: "200", label: "habitants" },
               { value: "4", label: "hameaux" },
-              { value: "540m", label: "d\u2019altitude" },
-              { value: "07", label: "Ard\u00e8che" },
+              { value: "540m", label: "d'altitude" },
+              { value: "07", label: "Ardèche" },
             ].map((stat) => (
               <div key={stat.label}>
                 <div className="text-3xl sm:text-4xl font-heading font-bold text-teal">
@@ -97,15 +96,15 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Actualit\u00e9s */}
+      {/* Actualités */}
       <section className="py-16 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
             <h2 className="font-heading text-3xl sm:text-4xl font-bold text-navy mb-3">
-              Actualit\u00e9s
+              Actualités
             </h2>
             <p className="text-navy/60 text-lg">
-              Les derni\u00e8res nouvelles de votre commune
+              Les dernières nouvelles de votre commune
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -143,7 +142,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
             <h2 className="font-heading text-3xl sm:text-4xl font-bold text-navy mb-3">
-              Prochains \u00e9v\u00e9nements
+              Prochains événements
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -159,7 +158,7 @@ export default function HomePage() {
                   {evt.titre}
                 </h3>
                 <p className="text-navy/60 text-sm">
-                  {evt.heure} &middot; {evt.lieu}
+                  {evt.heure} · {evt.lieu}
                 </p>
               </div>
             ))}
@@ -175,18 +174,18 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Acc\u00e8s rapide */}
+      {/* Accès rapide */}
       <section className="py-16 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <h2 className="font-heading text-3xl sm:text-4xl font-bold text-navy text-center mb-12">
-            Acc\u00e8s rapide
+            Accès rapide
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { href: "/vie-municipale", label: "Vie municipale", icon: "\ud83c\udfdb\ufe0f" },
-              { href: "/documents", label: "Documents", icon: "\ud83d\udcc4" },
-              { href: "/services", label: "Services", icon: "\ud83d\udd17" },
-              { href: "/contact", label: "Contact", icon: "\u2709\ufe0f" },
+              { href: "/vie-municipale", label: "Vie municipale", icon: "🏛️" },
+              { href: "/documents", label: "Documents", icon: "📄" },
+              { href: "/services", label: "Services", icon: "🔗" },
+              { href: "/contact", label: "Contact", icon: "✉️" },
             ].map((item) => (
               <Link
                 key={item.href}
@@ -211,19 +210,19 @@ export default function HomePage() {
           </h2>
           <div className="bg-white/10 rounded-xl p-8 backdrop-blur-sm">
             <p className="text-xl mb-2">
-              Lundi, Mardi, Jeudi : <strong>9h &ndash; 12h</strong>
+              Lundi, Mardi, Jeudi : <strong>9h – 12h</strong>
             </p>
             <p className="text-xl mb-6">
-              Mercredi : <strong>14h &ndash; 17h30</strong>
+              Mercredi : <strong>14h – 17h30</strong>
             </p>
             <p className="text-white/70">
-              T\u00e9l :{" "}
+              Tél :{" "}
               <a href="tel:0475290743" className="text-teal hover:text-white">
                 04 75 29 07 43
               </a>
             </p>
             <p className="text-white/70">
-              Le Village, 07160 Dornas (Ard\u00e8che)
+              Le Village, 07160 Dornas (Ardèche)
             </p>
           </div>
         </div>
