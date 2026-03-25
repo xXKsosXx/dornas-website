@@ -37,7 +37,7 @@ export default function HomePage() {
       {/* Hero */}
       <section className="relative h-[70vh] min-h-[500px] overflow-hidden">
         <Image
-          src="/images/Hero Dornas.PNG"
+          src="/images/hero-dornas.png"
           alt="Vue du village de Dornas en Ardèche"
           fill
           className="object-cover"

@@ -26,7 +26,7 @@ export default function Header() {
             className="flex items-center gap-3 text-white no-underline"
           >
             <Image
-              src="/images/logo mairie.png"
+              src="/images/logo-mairie.png"
               alt="Logo Mairie de Dornas"
               width={48}
               height={48}
